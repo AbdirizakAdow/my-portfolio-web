@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.navbar {
+    height: 10vh;
+    line-height: 10vh;
+    box-shadow: rgba(50, 50, 93, 0.23) 0 40px 30px -20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .logo {
+        font-size: 20px;
+        color: #498dca;
+    }
+    .nav-links {
+        display: flex;
+        justify-content: flex-end;
+        width: 75%;
+    }
+    .nav-links li{
+        color: black;
+        font-size: 20px;
+        padding: 0 10px;
+        margin: 0 10px;
+        cursor: pointer;
+        text-transform: capitalize;
+        text-decoration: none;
+        
+    }
+    .button{
+        border:none;
+        background: none;
+        font-size: 20px;
+    }
+    .mobile-menu-icon{
+        display: none;
+    }
+    @media (max-width:768px) {
+        .nav-links{
+          display: none;  
+        }
+        .nav-links-mobile{
+            position: absolute;
+            display: block;
+            list-style: none;
+            box-shadow: rgba(50, 50, 93, 0.23) 0 30px 30px -20px;
+            left: 0;
+            top: 10%;
+            transition: all 0.5s ease-in-out; 
+            width: 100%;
+            background-color: white;  
+        }
+        ul li{
+          padding: 32px;
+          width: 100%; 
+          transition: all 0.5s ease-in-out;
+          text-align: center; 
+        }
+        .mobile-menu-icon{
+            position:absolute;
+            display: block;
+            right: 20px;
+        }
+        .hero h1{
+            font-size: 50px;
+        }
+    }
+    .hero{
+        top: 2rem;
+        background-color:rgb(215, 212, 205);
+        font-family: 'Times New Roman', Times, serif;
+        border-radius: 50px;
+        margin: 10px;
+        padding: 80px;
+        text-align: center;
+        
+        box-shadow: 0 4px 8px rgb(0, 0green, 0.1blue);
+        align-items: center;
+        .hero:hover {
+            box-shadow: 0 8px 16px rgba(0, 0green, 0, 0.2);
+   }
+
+    }
+    .hero img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .hero  .project {
+        text-align: left;
+    }
+    .hero .list{
+        margin-left: 10px;
+        text-align: left;
+        font-size: large;
+    }
+    .hero .project li{
+        list-style-type: decimal;
+    }
+    .hero .list li{
+        list-style-type: decimal;
+        color: #498dca;
+    }
+    .hero  .Hi {
+        text-align: left;
+        font-family: "Poppins", sans-serif;
+        border: 10px;
+        border-radius: 10%;
+    }
+    .hero .project p{
+        color:#498dca;
+    }
+    .hero  .Hi p {
+        color: #498dca;
+    }
